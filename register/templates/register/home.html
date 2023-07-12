@@ -1,0 +1,7 @@
+<h1>hello home</h1>
+
+{% if request.user.is_authenticated %}
+    <a href="/logout_page" class="btn btn-success">Logout</a>
+{% else %}
+    <a href="/login_page" class="btn btn-success">LogIn</a>
+{% endif %}
